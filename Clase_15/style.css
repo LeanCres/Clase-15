@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+:root {
+  --very-dark-magenta: hsl(300, 43%,22%);
+  --soft-pink: hsl(300, 80%, 67%);
+
+  --dark-grayish-magenta: hsl(303,  10%, 53%);
+  --light-grayish-magenta: hsl(300,24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+  *::after,
+  *::before {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+  margin-top: 4.375em;
+  margin-left: 1.875em;
+  margin-right: 1.875em;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+}
+
+
+
+.titulo {
+  
+  
+  text-align: center;
+  justify-content: center;
+}
+
+.titulo h1 {
+  font-size: 30px; 
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+}
+
+.titulo p {
+  font-size: 14px;
+  margin-top:2em;
+  margin-bottom: 3em;
+  color: var(--dark-grayish-magenta);
+  text-align: center;
+}
+
+.parrafo-inicial {
+  text-align: justify;
+}
+
+.card {
+  background: var(--very-dark-magenta);
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+
+.card-1 {
+  margin-top: 50px;
+}
+
+.card h4 {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+
+
+.card h5{
+  color: var(--soft-pink);
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.card p{
+  color: var(--white);
+  text-align: start;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.foto-carnet{
+  display: flex;
+  border-radius: 50%;
+  width: 45px;
+  position: relative;
+  top: -6px;
+}
+
+.card-estrella{
+  background: var(--light-grayish-magenta);
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  text-align: center;
+  color: var(--very-dark-magenta);
+  font-size: 10px;
+  padding-bottom: 1.5em;
+}
+
+.icono-estrella {
+  letter-spacing:5px;
+  padding-top: 1em ;
+  padding-bottom: 1em;
+  
+}
+
+
+
+.review {
+  display: flex;
+  padding-bottom: 1em;
+  gap: 1em;
+
+}
+
+.card p{
+  line-height: 25px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.nombres{
+  text-align: left;
+  gap:10px;
+  bottom:2px;
+  position:relative;
+  left: 10px;
+}
+
+.nombres h5{
+position: relative;
+top: 4px;
+}
+
+/*------------- media query --------*/
+@media only screen and (min-width: 768px) {
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
